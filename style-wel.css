@@ -1,0 +1,72 @@
+/* Reset some default browser styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, blueviolet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.welcome-container {
+    background: rgba(255, 255, 255, 0.1); /* Light white background with transparency */
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Blur effect for background */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: blueviolet;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .welcome-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
